@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <radialGradient id="mouthBgBefore" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#401416" />
+      <stop offset="70%" stop-color="#24070a" />
+      <stop offset="100%" stop-color="#140305" />
+    </radialGradient>
+    <linearGradient id="gumGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#bf5563" />
+      <stop offset="60%" stop-color="#ce6876" />
+      <stop offset="100%" stop-color="#e28794" />
+    </linearGradient>
+    <linearGradient id="toothStained" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e3cb98" />
+      <stop offset="40%" stop-color="#edd9b0" />
+      <stop offset="85%" stop-color="#e2cd9d" />
+      <stop offset="100%" stop-color="#c9ad71" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Deep oral cavity background -->
+  <rect width="800" height="500" fill="url(#mouthBgBefore)" />
+
+  <!-- Upper Lip -->
+  <path d="M 120 180 Q 280 150 400 190 Q 520 150 680 180 Q 520 130 400 135 Q 280 130 120 180 Z" fill="#b85864" />
+
+  <!-- Gums Upper (Irregular / uneven contour) -->
+  <path d="M 170 210 Q 240 180 300 205 Q 350 175 400 198 Q 450 178 500 205 Q 560 185 630 215 L 630 170 L 170 170 Z" fill="url(#gumGrad)" opacity="0.9" />
+
+  <!-- Upper Teeth (Before: Discolored, slight gaps, slight chipping on central incisor) -->
+  <!-- Left Lateral -->
+  <path d="M 230 205 C 230 260 240 285 270 285 C 285 285 295 255 295 205 Z" fill="url(#toothStained)" filter="url(#shadow)" />
+  <line x1="260" y1="210" x2="265" y2="280" stroke="#be9c61" stroke-width="1.5" opacity="0.4" />
+
+  <!-- Central Left (Chipped corner, irregular edge) -->
+  <path d="M 302 202 C 300 280 305 315 345 318 C 375 318 390 300 392 200 Z" fill="url(#toothStained)" filter="url(#shadow)" />
+  <!-- Chip detail -->
+  <polygon points="340,317 352,310 358,318" fill="#5c3818" opacity="0.5" />
+  <path d="M 330 240 Q 345 280 338 310" stroke="#b2884a" stroke-width="2" opacity="0.45" />
+
+  <!-- Gap between centrals -->
+  <rect x="394" y="200" width="8" height="110" fill="#1b0608" opacity="0.75" />
+
+  <!-- Central Right (Slightly tilted, stained) -->
+  <path d="M 404 200 C 405 295 420 315 450 315 C 485 315 495 275 495 203 Z" fill="url(#toothStained)" filter="url(#shadow)" />
+  <path d="M 440 230 Q 450 270 445 305" stroke="#b2884a" stroke-width="2.2" opacity="0.45" />
+
+  <!-- Right Lateral (Crowded/rotated) -->
+  <path d="M 502 205 C 502 255 515 280 540 280 C 560 280 568 250 568 208 Z" fill="url(#toothStained)" filter="url(#shadow)" />
+
+  <!-- Canines and premolars receding in shadow -->
+  <path d="M 180 215 C 180 250 190 270 215 270 C 225 270 228 245 228 210 Z" fill="#c4aa72" opacity="0.8" />
+  <path d="M 572 210 C 572 245 580 270 605 270 C 620 270 625 245 625 215 Z" fill="#c4aa72" opacity="0.8" />
+
+  <!-- Lower Lip -->
+  <path d="M 140 330 Q 280 410 400 415 Q 520 410 660 330 Q 520 365 400 370 Q 280 365 140 330 Z" fill="#b04e5a" />
+
+  <!-- Label Badge Overlay -->
+  <rect x="30" y="30" width="130" height="34" rx="4" fill="#000000" fill-opacity="0.75" stroke="#dfd8cb" stroke-opacity="0.3" />
+  <text x="95" y="52" font-family="'DM Sans', sans-serif" font-size="12" font-weight="700" fill="#ffffff" letter-spacing="2" text-anchor="middle">BEFORE</text>
+  <text x="95" y="75" font-family="'DM Sans', sans-serif" font-size="10.5" fill="#d9e5e3" opacity="0.8" text-anchor="middle">Chipped &amp; Discoloured</text>
+</svg>

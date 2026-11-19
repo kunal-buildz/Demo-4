@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <radialGradient id="mouthBgAfter" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#3b1114" />
+      <stop offset="70%" stop-color="#1f0507" />
+      <stop offset="100%" stop-color="#100204" />
+    </radialGradient>
+    <linearGradient id="gumHealthy" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d66878" />
+      <stop offset="70%" stop-color="#e27c8b" />
+      <stop offset="100%" stop-color="#f09ba8" />
+    </linearGradient>
+    <linearGradient id="porcelainVeneer" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdfbf7" />
+      <stop offset="25%" stop-color="#ffffff" />
+      <stop offset="75%" stop-color="#f5f7f6" />
+      <stop offset="96%" stop-color="#e1ebe8" />
+      <stop offset="100%" stop-color="#c5ded7" />
+    </linearGradient>
+    <linearGradient id="translucency" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.8" />
+    </linearGradient>
+    <filter id="softGlow">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Deep oral cavity background -->
+  <rect width="800" height="500" fill="url(#mouthBgAfter)" />
+
+  <!-- Upper Lip -->
+  <path d="M 120 180 Q 280 145 400 185 Q 520 145 680 180 Q 520 130 400 135 Q 280 130 120 180 Z" fill="#b85864" />
+
+  <!-- Gums Upper (Symmetrical, healthy scalloped gingival architecture) -->
+  <path d="M 170 205 Q 235 175 295 200 Q 345 170 398 195 Q 452 170 502 200 Q 562 175 630 205 L 630 165 L 170 165 Z" fill="url(#gumHealthy)" />
+
+  <!-- Upper Teeth (After: Harmonious proportion, golden ratio, translucent incisal edge) -->
+  <!-- Left Canine -->
+  <path d="M 185 210 C 185 255 195 285 220 285 C 235 285 240 255 240 210 Z" fill="url(#porcelainVeneer)" filter="url(#softGlow)" />
+  
+  <!-- Left Lateral Incisor -->
+  <path d="M 242 202 C 242 265 250 295 282 295 C 298 295 305 265 305 202 Z" fill="url(#porcelainVeneer)" filter="url(#softGlow)" />
+  <!-- Enamel reflection -->
+  <path d="M 252 215 L 255 285 L 260 285 L 256 215 Z" fill="url(#translucency)" opacity="0.6" />
+
+  <!-- Central Left Incisor (Perfect width-to-length ratio, micro-texture) -->
+  <path d="M 308 198 C 307 285 315 322 352 322 C 388 322 396 290 398 198 Z" fill="url(#porcelainVeneer)" filter="url(#softGlow)" />
+  <path d="M 320 210 L 324 310 L 332 310 L 326 210 Z" fill="url(#translucency)" opacity="0.8" />
+  <!-- Incisal halo -->
+  <path d="M 315 318 Q 352 324 390 318" stroke="#a4cac3" stroke-width="2.5" opacity="0.65" fill="none" />
+
+  <!-- Central Right Incisor (Symmetrical twin) -->
+  <path d="M 402 198 C 404 290 412 322 448 322 C 485 322 493 285 492 198 Z" fill="url(#porcelainVeneer)" filter="url(#softGlow)" />
+  <path d="M 470 210 L 466 310 L 458 310 L 464 210 Z" fill="url(#translucency)" opacity="0.8" />
+  <path d="M 410 318 Q 448 324 485 318" stroke="#a4cac3" stroke-width="2.5" opacity="0.65" fill="none" />
+
+  <!-- Right Lateral Incisor -->
+  <path d="M 495 202 C 495 265 502 295 518 295 C 550 295 558 265 558 202 Z" fill="url(#porcelainVeneer)" filter="url(#softGlow)" />
+  <path d="M 540 215 L 536 285 L 531 285 L 535 215 Z" fill="url(#translucency)" opacity="0.6" />
+
+  <!-- Right Canine -->
+  <path d="M 560 210 C 560 255 565 285 580 285 C 605 285 615 255 615 210 Z" fill="url(#porcelainVeneer)" filter="url(#softGlow)" />
+
+  <!-- Lower Lip -->
+  <path d="M 140 335 Q 280 415 400 420 Q 520 415 660 335 Q 520 370 400 375 Q 280 370 140 335 Z" fill="#b04e5a" />
+
+  <!-- Label Badge Overlay -->
+  <rect x="30" y="30" width="130" height="34" rx="4" fill="#2a7f79" stroke="#dcc594" stroke-opacity="0.6" />
+  <text x="95" y="52" font-family="'DM Sans', sans-serif" font-size="12" font-weight="700" fill="#ffffff" letter-spacing="2" text-anchor="middle">AFTER</text>
+  <text x="95" y="75" font-family="'DM Sans', sans-serif" font-size="10.5" fill="#d9e5e3" opacity="0.9" text-anchor="middle">Single-Visit Veneers</text>
+</svg>

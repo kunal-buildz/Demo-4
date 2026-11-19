@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smile Demo Dental Clinic | Compassionate dental care, crafted with precision.</title>
+  <meta name="description" content="Smile Demo Dental Clinic in Bandra West, Mumbai. Gentle, modern dentistry for local families. Experience pain-free treatments, digital diagnostics, and warm hospitality.">
+  <meta name="keywords" content="dental clinic, dentist near me, dental implants, root canal, teeth whitening, clear aligners, smile makeover">
+  <meta name="theme-color" content="#0c1a19">
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="Smile Demo Dental Clinic | Gentle &amp; Precise Local Dentistry">
+  <meta property="og:description" content="State-of-the-art digital dental care for your whole family. Pain-free treatments and single-visit restorations.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Serif) & DM Sans (Modern Grotesque) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JSON-LD Structured Schema -->
+  <script type="application/ld+json" id="dental-schema-jsonld">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Smile Demo Dental Clinic",
+    "description": "Compassionate dental care, crafted with precision.",
+    "telephone": "+91 00000 00000",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Suite 204, Platinum Health Square, Turner Road, Bandra West, Mumbai 400050",
+      "addressLocality": "Bandra West",
+      "addressRegion": "Mumbai",
+      "addressCountry": "IN"
+    },
+    "openingHours": "Mo-Sa 09:30-20:00",
+    "founder": {
+      "@type": "Person",
+      "name": "Dr. Demo Name",
+      "jobTitle": "Principal Dental Surgeon",
+      "honorificSuffix": "BDS, MDS"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       0. DEMO RE-BRANDING RIBBON (Toggleable via config.showDemoRibbon)
+       ========================================================================== -->
+  <aside id="demo-ribbon" class="demo-ribbon" aria-label="Demo notice">
+    <div class="ribbon-content">
+      <span class="badge">CLIENT DEMO PREVIEW</span>
+      <span>Easily re-brand this template in under 5 minutes by updating <code>config.js</code>.</span>
+      <button type="button" class="close-ribbon" aria-label="Close demo notice">&times;</button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       1. STICKY HEADER
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <!-- Logo -->
+        <a href="#hero" class="brand-logo" aria-label="Homepage">
+          <div class="brand-logo-mark">
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="17" cy="17" r="16" stroke="#b8975a" stroke-width="1.2" opacity="0.6"/>
+              <path d="M17 6C12 6 9 10 9 15C9 22 15 26 17 28C19 26 25 22 25 15C25 10 22 6 17 6Z" fill="#2a7f79" stroke="#dcc594" stroke-width="1"/>
+              <circle cx="17" cy="15" r="2.2" fill="#dcc594"/>
+            </svg>
+          </div>
+          <div class="brand-logo-text">
+            <span class="brand-title" data-config="shortName">Smile Demo</span>
+            <span class="brand-subtitle">Dental Clinic</span>
+          </div>
+        </a>
+
+        <!-- Minimal Navigation (Strictly: Treatments, Doctor, Reviews, FAQ, Contact) -->
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu">
+            <li><a href="#treatments" class="nav-link">Treatments</a></li>
+            <li><a href="#doctor" class="nav-link">Doctor</a></li>
+            <li><a href="#reviews" class="nav-link">Reviews</a></li>
+            <li><a href="#faq" class="nav-link">FAQ</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header Actions: Direct Call & WhatsApp Buttons -->
+        <div class="header-actions">
+          <a href="tel:+910000000000" class="header-phone-link" data-config-phone aria-label="Call clinic directly">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span data-config="phone">+91 00000 00000</span>
+          </a>
+
+          <a href="https://wa.me/910000000000" class="btn btn-gold btn-sm" data-config-whatsapp target="_blank" rel="noopener noreferrer">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.19 8.19 0 0 1-5.82 2.42c-1.47 0-2.9-.39-4.16-1.13l-.3-.18-3.09.81.83-3.01-.2-.31a8.16 8.16 0 0 1-1.26-4.42c0-4.54 3.7-8.24 8.24-8.24zm4.51 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.84-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.22.89 2.41 1.02 2.58.12.17 1.76 2.68 4.26 3.76.6.26 1.06.41 1.42.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"/>
+            </svg>
+            Book on WhatsApp
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+    <ul class="mobile-nav-list">
+      <li><a href="#treatments" class="nav-link">Treatments</a></li>
+      <li><a href="#doctor" class="nav-link">Meet Dr. Demo</a></li>
+      <li><a href="#reviews" class="nav-link">Patient Reviews</a></li>
+      <li><a href="#before-after" class="nav-link">Before &amp; After</a></li>
+      <li><a href="#faq" class="nav-link">Frequently Asked Questions</a></li>
+      <li><a href="#contact" class="nav-link">Contact &amp; Timings</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="tel:+910000000000" class="btn btn-outline-light" data-config-phone>
+        Call Clinic (+91 00000 00000)
+      </a>
+      <a href="https://wa.me/910000000000" class="btn btn-whatsapp" data-config-whatsapp target="_blank" rel="noopener noreferrer">
+        Book on WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       2. HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section dark-bg" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="eyebrow" data-config="area">BANDRA WEST, MUMBAI</div>
+          <h1 class="hero-title">
+            Compassionate dentistry, <span class="accent-word">perfected</span>.
+          </h1>
+          <p class="hero-subline" data-config="subTagline">
+            Gentle, modern dentistry for local families. Experience pain-free treatments, digital diagnostics, and warm hospitality.
+          </p>
+          <div class="hero-actions">
+            <a href="https://wa.me/910000000000" class="btn btn-gold" data-config-whatsapp target="_blank" rel="noopener noreferrer">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.19 8.19 0 0 1-5.82 2.42c-1.47 0-2.9-.39-4.16-1.13l-.3-.18-3.09.81.83-3.01-.2-.31a8.16 8.16 0 0 1-1.26-4.42c0-4.54 3.7-8.24 8.24-8.24zm4.51 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.84-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.22.89 2.41 1.02 2.58.12.17 1.76 2.68 4.26 3.76.6.26 1.06.41 1.42.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"/>
+              </svg>
+              Book on WhatsApp
+            </a>
+            <a href="#treatments" class="btn btn-outline-light">
+              Explore Treatments
+            </a>
+          </div>
+
+          <!-- Trust Chips -->
+          <div class="trust-chips">
+            <div class="trust-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Pain-free care</span>
+            </div>
+            <div class="trust-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Modern sterilisation</span>
+            </div>
+            <div class="trust-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Open Mon-Sat</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Graphic -->
+        <div class="hero-visual">
+          <div class="hero-image-card">
+            <img src="assets/clinic-interior.svg" alt="Modern dental consultation suite" width="700" height="500" loading="eager">
+            <div class="hero-floating-badge">
+              <div>
+                <div class="rating-badge-stars">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <div style="font-size: 11px; color: var(--color-sand); margin-top: 3px;">
+                  <strong data-config="googleReviewRating">4.9</strong> / 5.0 Rating • <span data-config="googleReviewCount">380+</span> Local Patients
+                </div>
+              </div>
+              <span class="badge" style="background-color: var(--color-brand); color: #fff; font-size: 10px; padding: 4px 8px; border-radius: 4px; font-weight: 600;">VERIFIED CARE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. FEATURE BAND (One Signature Service: Single-Visit Restorations)
+       ========================================================================== -->
+  <section class="feature-band dark-bg" id="signature-feature">
+    <div class="container">
+      <div class="feature-grid">
+        <!-- Feature Left Content -->
+        <div>
+          <span class="feature-badge-pill">SINGLE-VISIT PRECISION</span>
+          <h2 class="feature-title">
+            Custom ceramic crowns, crafted in <span class="accent-word">one visit</span>.
+          </h2>
+          <p class="feature-desc">
+            No sticky physical moulds, no uncomfortable temporary caps, and no waiting two weeks. We combine 3D intraoral digital scanning with precision robotic milling to design, fit, and polish your permanent restoration in a single relaxed appointment.
+          </p>
+          <ul class="feature-checklist">
+            <li>
+              <span class="feature-check-icon">✓</span>
+              <span><strong>60-Second Optical Scan:</strong> Zero gag reflex, microscopic precision.</span>
+            </li>
+            <li>
+              <span class="feature-check-icon">✓</span>
+              <span><strong>Custom Bio-Shade Matching:</strong> Blends invisibly with your neighboring teeth.</span>
+            </li>
+            <li>
+              <span class="feature-check-icon">✓</span>
+              <span><strong>Same-Day Permanent Bond:</strong> Walk out confident with full bite strength restored.</span>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-outline-light btn-sm">Ask About Same-Day Care &rarr;</a>
+        </div>
+
+        <!-- Feature Right Content / Process Visual -->
+        <div class="feature-visual-box">
+          <div class="timeline-step">
+            <div class="timeline-number">01</div>
+            <div class="timeline-content">
+              <h4>Digital 3D Intraoral Capture</h4>
+              <p>We capture millions of data points of your tooth contour in real time on our chairside screen.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-number">02</div>
+            <div class="timeline-content">
+              <h4>Architectural CAD Design</h4>
+              <p>Your restoration is modeled digitally with microscopic margins to protect your natural tooth structure.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-number">03</div>
+            <div class="timeline-content">
+              <h4>High-Precision Ceramic Finish</h4>
+              <p>Milled from solid biocompatible zirconia or lithium disilicate, hand-glazed, and permanently bonded.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. STATS STRIP (Animated Counters, clearly marked as sample demo numbers)
+       ========================================================================== -->
+  <section class="stats-strip dark-bg" id="stats-strip" aria-label="Clinical Metrics">
+    <div class="container">
+      <div class="stats-grid">
+        <!-- Stat 1 -->
+        <div class="stat-item">
+          <div class="stat-number-wrap">
+            <span class="stat-number" data-target="12000" data-decimals="0">12,000</span>
+            <span class="stat-suffix">+</span>
+          </div>
+          <div class="stat-label">Happy Patients Treated</div>
+          <span class="stat-note">[Sample Demo Metric]</span>
+        </div>
+
+        <!-- Stat 2 -->
+        <div class="stat-item">
+          <div class="stat-number-wrap">
+            <span class="stat-number" data-target="15" data-decimals="0">15</span>
+            <span class="stat-suffix">+</span>
+          </div>
+          <div class="stat-label">Years Clinical Practice</div>
+          <span class="stat-note">[Sample Demo Metric]</span>
+        </div>
+
+        <!-- Stat 3 -->
+        <div class="stat-item">
+          <div class="stat-number-wrap">
+            <span class="stat-number" data-target="3800" data-decimals="0">3,800</span>
+            <span class="stat-suffix">+</span>
+          </div>
+          <div class="stat-label">Implants &amp; Restorations</div>
+          <span class="stat-note">[Sample Demo Metric]</span>
+        </div>
+
+        <!-- Stat 4 -->
+        <div class="stat-item">
+          <div class="stat-number-wrap">
+            <span class="stat-number" data-target="99.4" data-decimals="1">99.4</span>
+            <span class="stat-suffix">%</span>
+          </div>
+          <div class="stat-label">Pain-Free Comfort Rating</div>
+          <span class="stat-note">[Sample Demo Metric]</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. TREATMENTS (Numbered List of 8 Essential Clinical Services)
+       ========================================================================== -->
+  <section class="treatments-section" id="treatments">
+    <div class="container">
+      <div class="section-header-editorial text-center" style="max-width: 680px; margin-left: auto; margin-right: auto; text-align: center;">
+        <div class="eyebrow">COMPREHENSIVE LOCAL DENTISTRY</div>
+        <h2 style="font-size: 44px; margin-bottom: 16px;">
+          Expert treatments, <span class="accent-word">honest</span> counsel.
+        </h2>
+        <p style="color: var(--color-body); font-size: 16px;">
+          Every procedure begins with a detailed visual explanation, clear treatment alternatives, and a written transparent estimate before we begin.
+        </p>
+      </div>
+
+      <div class="treatments-grid">
+        <!-- Treatment 1: Implants -->
+        <article class="treatment-row">
+          <span class="treatment-number">01</span>
+          <div class="treatment-content">
+            <h3 class="treatment-title">
+              Guided Dental Implants
+              <span class="treatment-arrow">&rarr;</span>
+            </h3>
+            <p class="treatment-desc">
+              Permanent titanium or ceramic root replacements planned with 3D CBCT imaging for rock-solid stability and natural aesthetics.
+            </p>
+            <span class="treatment-tag">Restorative Dentistry</span>
+          </div>
+        </article>
+
+        <!-- Treatment 2: Root Canal -->
+        <article class="treatment-row">
+          <span class="treatment-number">02</span>
+          <div class="treatment-content">
+            <h3 class="treatment-title">
+              Microscopic Root Canal
+              <span class="treatment-arrow">&rarr;</span>
+            </h3>
+            <p class="treatment-desc">
+              High-magnification rotary endodontics designed to save infected teeth in a single, thoroughly anesthetized, pain-free sitting.
+            </p>
+            <span class="treatment-tag">Tooth Preservation</span>
+          </div>
+        </article>
+
+        <!-- Treatment 3: Braces & Aligners -->
+        <article class="treatment-row">
+          <span class="treatment-number">03</span>
+          <div class="treatment-content">
+            <h3 class="treatment-title">
+              Clear Invisible Aligners
+              <span class="treatment-arrow">&rarr;</span>
+            </h3>
+            <p class="treatment-desc">
+              Virtually invisible, custom-moulded clear aligners that gently straighten teeth without metal wires, brackets, or dietary restrictions.
+            </p>
+            <span class="treatment-tag">Orthodontics</span>
+          </div>
+        </article>
+
+        <!-- Treatment 4: Teeth Whitening -->
+        <article class="treatment-row">
+          <span class="treatment-number">04</span>
+          <div class="treatment-content">
+            <h3 class="treatment-title">
+              Gentle Laser Teeth Whitening
+              <span class="treatment-arrow">&rarr;</span>
+            </h3>
+            <p class="treatment-desc">
+              Safe, enamel-friendly in-clinic laser brightening that lifts stubborn coffee and lifestyle stains by up to 6–8 shades in under 45 minutes.
+            </p>
+            <span class="treatment-tag">Cosmetic Care</span>
+          </div>
+        </article>
+
+        <!-- Treatment 5: Smile Makeover -->
+        <article class="treatment-row">
+          <span class="treatment-number">05</span>
+          <div class="treatment-content">
+            <h3 class="treatment-title">
+              Handcrafted Smile Makeover
+              <span class="treatment-arrow">&rarr;</span>
+            </h3>
+            <p class="treatment-desc">
+              Bespoke ultra-thin porcelain veneers designed according to your facial symmetry to correct gaps, chips, and tooth proportions.
+            </p>
+            <span class="treatment-tag">Aesthetic Architecture</span>
+          </div>
+        </article>
+
+        <!-- Treatment 6: Crowns & Bridges -->
+        <article class="treatment-row">
+          <span class="treatment-number">06</span>
+          <div class="treatment-content">
+            <h3 class="treatment-title">
+              Zirconia Crowns &amp; Bridges
+              <span class="treatment-arrow">&rarr;</span>
+            </h3>
+            <p class="treatment-desc">
+              Metal-free, biocompatible monolithic zirconia and lithium disilicate crowns engineered for lifelike light translucency and lifetime durability.
+            </p>
+            <span class="treatment-tag">Prosthodontics</span>
+          </div>
+        </article>
+
+        <!-- Treatment 7: Gum Treatment -->
+        <article class="treatment-row">
+          <span class="treatment-number">07</span>
+          <div class="treatment-content">
+            <h3 class="treatment-title">
+              Laser Gum Therapy &amp; Care
+              <span class="treatment-arrow">&rarr;</span>
+            </h3>
+            <p class="treatment-desc">
+              Minimally invasive ultrasonic scaling and laser decontamination to eliminate bleeding gums, treat gingivitis, and stabilize bone support.
+            </p>
+            <span class="treatment-tag">Periodontics</span>
+          </div>
+        </article>
+
+        <!-- Treatment 8: Kids Dentistry -->
+        <article class="treatment-row">
+          <span class="treatment-number">08</span>
+          <div class="treatment-content">
+            <h3 class="treatment-title">
+              Gentle Pediatric Dentistry
+              <span class="treatment-arrow">&rarr;</span>
+            </h3>
+            <p class="treatment-desc">
+              Anxiety-free, welcoming dental visits for children including preventive fluoride coatings, cavity pit sealants, and early bite guidance.
+            </p>
+            <span class="treatment-tag">Preventive Family Care</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. WHY CHOOSE US (3 Pillars: Precision, Trust, Comfort)
+       ========================================================================== -->
+  <section class="why-us-section" id="philosophy">
+    <div class="container">
+      <div class="text-center" style="max-width: 650px; margin: 0 auto; text-align: center;">
+        <div class="eyebrow">OUR THREE PILLARS</div>
+        <h2 style="font-size: 40px; margin-bottom: 14px;">
+          Built on principles, not <span class="accent-word">compromises</span>.
+        </h2>
+        <p style="color: var(--color-body); font-size: 15.5px;">
+          We believe visiting the dentist should feel as reassuring and transparent as visiting a trusted family advisor.
+        </p>
+      </div>
+
+      <div class="pillars-grid">
+        <!-- Pillar 1: Precision -->
+        <div class="pillar-card">
+          <div class="pillar-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="22" y1="12" x2="18" y2="12"></line>
+              <line x1="6" y1="12" x2="2" y2="12"></line>
+              <line x1="12" y1="6" x2="12" y2="2"></line>
+              <line x1="12" y1="22" x2="12" y2="18"></line>
+            </svg>
+          </div>
+          <h3 class="pillar-title">Digital Precision</h3>
+          <p class="pillar-text">
+            From low-dose 3D volumetric diagnostics to microscopic illumination, every diagnosis is backed by objective imagery you can see and understand on our chairside monitors.
+          </p>
+        </div>
+
+        <!-- Pillar 2: Trust -->
+        <div class="pillar-card">
+          <div class="pillar-icon-box" style="background-color: rgba(184, 151, 90, 0.12); color: var(--color-gold);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="pillar-title">Uncompromising Trust</h3>
+          <p class="pillar-text">
+            Medical-grade Class-B vacuum autoclaves, 100% disposable barrier protection, and conservative treatment plans. We never recommend procedures that your natural teeth do not need.
+          </p>
+        </div>
+
+        <!-- Pillar 3: Comfort -->
+        <div class="pillar-card">
+          <div class="pillar-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </div>
+          <h3 class="pillar-title">Pain-Free Comfort</h3>
+          <p class="pillar-text">
+            Gentle topical numbing gels prior to any injection, ergonomic memory-foam dental chairs, noise-canceling headphones, and a doctor who listens to your comfort levels at every step.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. MEET THE DOCTOR SECTION
+       ========================================================================== -->
+  <section class="doctor-section dark-bg" id="doctor">
+    <div class="container">
+      <div class="doctor-grid">
+        <!-- Doctor Photo Column -->
+        <div class="doctor-photo-wrap">
+          <img src="assets/doctor-placeholder.svg" alt="Doctor portrait" width="600" height="750" loading="lazy">
+        </div>
+
+        <!-- Doctor Editorial Bio & Quote -->
+        <div class="doctor-bio-wrap">
+          <div class="eyebrow" data-config="doctorTitle">FOUNDER &amp; LEAD SURGEON</div>
+          <span class="doctor-quote-symbol">&ldquo;</span>
+          <blockquote class="doctor-quote" data-config="doctorQuote">
+            We believe dentistry should never feel intimidating. When advanced technology meets genuine human empathy, even complex smile restorations become calm, predictable, and reassuring.
+          </blockquote>
+
+          <h3 class="doctor-meta-name" data-config="doctorName">Dr. Demo Name</h3>
+          <p class="doctor-meta-qual" data-config="doctorQualification">BDS, MDS (Prosthodontics &amp; Implantology)</p>
+
+          <p class="doctor-bio" data-config="doctorBio">
+            Trained in advanced digital implantology and aesthetic restorative care, Dr. Demo Name brings a gentle, patient-first approach to everyday dentistry. Every treatment plan is customised, transparent, and focused on preserving your natural teeth with minimal discomfort.
+          </p>
+
+          <div class="doctor-credentials-chips">
+            <span class="cred-chip" data-config="doctorExperience">15+ Years Clinical Practice</span>
+            <span class="cred-chip">Advanced Digital Implantology</span>
+            <span class="cred-chip">Microscopic Endodontics</span>
+            <span class="cred-chip">Conservative Aesthetics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. PATIENT STORIES (CAROUSEL WITH CLEARLY MARKED SAMPLE CARDS)
+       ========================================================================== -->
+  <section class="stories-section" id="reviews">
+    <div class="container">
+      <div class="text-center" style="max-width: 650px; margin: 0 auto; text-align: center;">
+        <div class="eyebrow">PATIENT EXPERIENCES</div>
+        <h2 style="font-size: 42px; margin-bottom: 12px;">
+          In our patients' <span class="accent-word">own words</span>.
+        </h2>
+        <p style="color: var(--color-body); font-size: 15.5px;">
+          Real comfort, genuine reassurance, and smiles restored. Read sample experiences from our local neighborhood community.
+        </p>
+      </div>
+
+      <div class="stories-carousel-container">
+        <div class="stories-track-wrapper">
+          <div class="stories-track" id="stories-track">
+            <!-- Sample Card 1 -->
+            <div class="story-card">
+              <div>
+                <span class="story-sample-tag">SAMPLE PATIENT REVIEW</span>
+                <div class="story-stars">★★★★★</div>
+                <p class="story-text">
+                  “I had been postponing my root canal for two years out of sheer dental phobia. Dr. Demo was incredibly patient, explained every step before touching a tool, and I literally felt zero pain throughout.”
+                </p>
+              </div>
+              <div class="story-author-box">
+                <div class="story-avatar-initial">R</div>
+                <div>
+                  <div class="story-author-name">Rohit M.</div>
+                  <div class="story-treatment-name">Microscopic Root Canal &bull; Bandra West</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sample Card 2 -->
+            <div class="story-card">
+              <div>
+                <span class="story-sample-tag">SAMPLE PATIENT REVIEW</span>
+                <div class="story-stars">★★★★★</div>
+                <p class="story-text">
+                  “Getting my front ceramic crown done in a single sitting was magic. The 3D scan took just one minute, no gooey impressions, and the shade match is so seamless even my spouse couldn't tell which tooth was restored.”
+                </p>
+              </div>
+              <div class="story-author-box">
+                <div class="story-avatar-initial">P</div>
+                <div>
+                  <div class="story-author-name">Priyanka S.</div>
+                  <div class="story-treatment-name">Single-Visit Zirconia Crown &bull; Khar</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sample Card 3 -->
+            <div class="story-card">
+              <div>
+                <span class="story-sample-tag">SAMPLE PATIENT REVIEW</span>
+                <div class="story-stars">★★★★★</div>
+                <p class="story-text">
+                  “What sets this clinic apart is the sheer honesty. They did not try to upsell expensive procedures; instead, they saved my natural tooth with conservative laser treatment. Pristine hygiene standards!”
+                </p>
+              </div>
+              <div class="story-author-box">
+                <div class="story-avatar-initial">A</div>
+                <div>
+                  <div class="story-author-name">Anand V.</div>
+                  <div class="story-treatment-name">Laser Gum Therapy &bull; Santacruz</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sample Card 4 -->
+            <div class="story-card">
+              <div>
+                <span class="story-sample-tag">SAMPLE PATIENT REVIEW</span>
+                <div class="story-stars">★★★★★</div>
+                <p class="story-text">
+                  “My 8-year-old daughter was terrified of dental visits. The staff and doctor made her feel so at ease with gentle explanations that she walked out with a smile and zero tears. Truly grateful!”
+                </p>
+              </div>
+              <div class="story-author-box">
+                <div class="story-avatar-initial">M</div>
+                <div>
+                  <div class="story-author-name">Meera K.</div>
+                  <div class="story-treatment-name">Kids Preventive Care &bull; Bandra West</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sample Card 5 -->
+            <div class="story-card">
+              <div>
+                <span class="story-sample-tag">SAMPLE PATIENT REVIEW</span>
+                <div class="story-stars">★★★★★</div>
+                <p class="story-text">
+                  “Completed my clear aligner treatment here in 9 months. The appointments were always on time, digital check-ins were seamless, and my smile alignment is better than I ever dreamed.”
+                </p>
+              </div>
+              <div class="story-author-box">
+                <div class="story-avatar-initial">S</div>
+                <div>
+                  <div class="story-author-name">Siddharth N.</div>
+                  <div class="story-treatment-name">Clear Aligners &bull; Mumbai</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls: Next/Prev & Dots -->
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="carousel-prev" aria-label="Previous review">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <div class="carousel-dots" id="carousel-dots"></div>
+          <button class="carousel-btn" id="carousel-next" aria-label="Next review">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. BEFORE / AFTER (INTERACTIVE DRAG-SLIDER COMPONENT)
+       ========================================================================== -->
+  <section class="before-after-section" id="before-after">
+    <div class="container">
+      <div class="text-center" style="max-width: 650px; margin: 0 auto; text-align: center;">
+        <div class="eyebrow">CLINICAL PRECISION &amp; ARTISTRY</div>
+        <h2 style="font-size: 42px; margin-bottom: 12px;">
+          Before and <span class="accent-word">after</span>.
+        </h2>
+        <p style="color: var(--color-body); font-size: 15.5px;">
+          Slide left or right to compare realistic clinical restoration results. We preserve as much natural enamel as possible while restoring harmonious contour and brilliance.
+        </p>
+      </div>
+
+      <div class="ba-wrapper">
+        <div class="ba-slider-container" id="ba-slider-container">
+          <!-- After Image Layer (Background) -->
+          <div class="ba-image-layer ba-after-layer">
+            <img src="assets/after-teeth.svg" alt="Restored smile after ceramic veneers" width="800" height="500">
+          </div>
+
+          <!-- Before Image Layer (Foreground with clip-width) -->
+          <div class="ba-image-layer ba-before-layer" id="ba-before-layer">
+            <img src="assets/before-teeth.svg" alt="Smile condition before treatment" width="800" height="500">
+          </div>
+
+          <!-- Interactive Drag Divider Handle -->
+          <div class="ba-handle" id="ba-handle">
+            <div class="ba-handle-knob" aria-label="Drag to compare before and after">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="8 4 4 12 8 20"></polyline>
+                <polyline points="16 4 20 12 16 20"></polyline>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="ba-caption-box">
+          <div class="ba-case-title">
+            Case: <strong>Aesthetic Porcelain Makeover</strong> &bull; Sample Demonstration
+          </div>
+          <div class="ba-instructions">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            Drag handle horizontally to compare
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. FAQ ACCORDION (5 Crucial Questions: Cost, Pain, Duration, Emergency, EMI)
+       ========================================================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="text-center" style="max-width: 650px; margin: 0 auto; text-align: center;">
+        <div class="eyebrow">TRANSPARENCY FIRST</div>
+        <h2 style="font-size: 42px; margin-bottom: 14px;">
+          Frequently asked <span class="accent-word">questions</span>.
+        </h2>
+        <p style="color: var(--color-body); font-size: 15.5px;">
+          Clear, straightforward answers about our protocols, comfort, timing, and treatment philosophy.
+        </p>
+      </div>
+
+      <div class="faq-list">
+        <!-- Question 1: Cost & Transparency (NO specific prices) -->
+        <div class="faq-item active">
+          <button class="faq-question-btn" type="button" aria-expanded="true">
+            <span>How are treatment costs determined?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Every smile is anatomically unique. During your initial consultation, we conduct a detailed digital diagnostic check and discuss all viable clinical alternatives. You will receive an itemized, written treatment plan before any work begins—with zero unexpected surprises or hidden clinical fees.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 2: Pain & Discomfort -->
+        <div class="faq-item">
+          <button class="faq-question-btn" type="button" aria-expanded="false">
+            <span>Will my procedure be painful?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Patient comfort is our defining priority. We apply specialized topical anesthetics before administering micro-needle local numbing so that you barely feel the pinch. Modern techniques ensure the procedure itself is thoroughly comfortable, and we provide clear aftercare protocols to keep recovery smooth and effortless.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 3: Duration & Number of Visits -->
+        <div class="faq-item">
+          <button class="faq-question-btn" type="button" aria-expanded="false">
+            <span>How many visits will my treatment take?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Thanks to our digital chairside workflow and advanced rotary equipment, many common procedures—including diagnostic cleanings, single-sitting root canals, and ceramic restorations—can be completed in just one or two visits. During your consultation, we provide an exact timeline so you can plan your schedule comfortably.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 4: Dental Emergencies -->
+        <div class="faq-item">
+          <button class="faq-question-btn" type="button" aria-expanded="false">
+            <span>Do you accommodate same-day dental emergencies?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes. If you are experiencing acute dental pain, a knocked-out tooth, severe swelling, or a fractured restoration, we reserve emergency priority slots every working day. Please call us directly or message us on WhatsApp immediately so our clinical team can prepare for your arrival.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 5: Payment Options & Flexible EMI -->
+        <div class="faq-item">
+          <button class="faq-question-btn" type="button" aria-expanded="false">
+            <span>What payment methods and EMI options do you offer?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              We support all major payment modes including UPI, debit/credit cards, and net banking. For multi-stage procedures like smile makeovers and dental implants, we provide flexible stage-wise payment schedules as well as zero-interest monthly EMI options to make your care seamlessly manageable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       11. CALL-BACK FORM (WhatsApp Instant Connect)
+       ========================================================================== -->
+  <section class="callback-section dark-bg" id="contact">
+    <div class="container">
+      <div class="callback-grid">
+        <!-- Contact Information & Map Info -->
+        <div class="callback-info">
+          <div class="eyebrow" style="color: var(--color-champagne);">GET IN TOUCH</div>
+          <h2>
+            Prefer that <span class="accent-word">we call you?</span>
+          </h2>
+          <p>
+            Leave your contact details and preferred time window below. Our clinic coordinator will review your request and connect with you on WhatsApp or phone within a few hours.
+          </p>
+
+          <div class="callback-contact-cards">
+            <!-- Clinic Hours -->
+            <div class="contact-quick-item">
+              <span class="contact-icon-gold">⏱</span>
+              <div>
+                <strong style="color: #ffffff; display: block; font-size: 14px;">Clinic Hours</strong>
+                <span style="color: var(--color-mist); font-size: 13px;" data-config="hours">
+                  Monday – Saturday: 9:30 AM – 8:00 PM (Sundays by prior emergency appointment)
+                </span>
+              </div>
+            </div>
+
+            <!-- Clinic Address -->
+            <div class="contact-quick-item">
+              <span class="contact-icon-gold">📍</span>
+              <div>
+                <strong style="color: #ffffff; display: block; font-size: 14px;">Clinic Location</strong>
+                <span style="color: var(--color-mist); font-size: 13px;" data-config="address">
+                  Suite 204, Platinum Health Square, Turner Road, Bandra West, Mumbai 400050
+                </span>
+              </div>
+            </div>
+
+            <!-- Phone Direct -->
+            <div class="contact-quick-item">
+              <span class="contact-icon-gold">📞</span>
+              <div>
+                <strong style="color: #ffffff; display: block; font-size: 14px;">Direct Phone</strong>
+                <a href="tel:+910000000000" style="color: var(--color-champagne); font-size: 13px; text-decoration: none;" data-config-phone>
+                  <span data-config="phone">+91 00000 00000</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Card (No backend, sends WhatsApp on submit) -->
+        <div class="form-box-container">
+          <h3 class="form-title">Request a Call Back</h3>
+          <p class="form-subtitle">Fill in your preferred details for a prompt confirmation.</p>
+
+          <form id="callback-request-form" novalidate>
+            <div class="form-group">
+              <label for="cb-name" class="form-label">Your Full Name *</label>
+              <input type="text" id="cb-name" class="form-input" placeholder="e.g. Aditi Sharma" required>
+            </div>
+
+            <div class="form-group">
+              <label for="cb-phone" class="form-label">Phone / WhatsApp Number *</label>
+              <input type="tel" id="cb-phone" class="form-input" placeholder="e.g. +91 98765 43210" required>
+            </div>
+
+            <div class="form-group">
+              <label for="cb-treatment" class="form-label">Treatment of Interest</label>
+              <select id="cb-treatment" class="form-select">
+                <option value="General Consultation">General Consultation &amp; Checkup</option>
+                <option value="Guided Dental Implants">Guided Dental Implants</option>
+                <option value="Microscopic Root Canal">Microscopic Root Canal</option>
+                <option value="Clear Invisible Aligners">Clear Invisible Aligners</option>
+                <option value="Teeth Whitening">Teeth Whitening</option>
+                <option value="Smile Makeover / Veneers">Smile Makeover / Veneers</option>
+                <option value="Single-Visit Crowns">Single-Visit Ceramic Crowns</option>
+                <option value="Gum Care & Laser">Gum Care &amp; Laser</option>
+                <option value="Kids Dentistry">Kids Dentistry</option>
+                <option value="Emergency Toothache">Emergency Dental Care</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="cb-time" class="form-label">Preferred Time to Call</label>
+              <select id="cb-time" class="form-select">
+                <option value="Morning (10:00 AM - 1:00 PM)">Morning (10:00 AM – 1:00 PM)</option>
+                <option value="Afternoon (1:00 PM - 5:00 PM)">Afternoon (1:00 PM – 5:00 PM)</option>
+                <option value="Evening (5:00 PM - 8:00 PM)">Evening (5:00 PM – 8:00 PM)</option>
+                <option value="Anytime Convenient">Anytime during working hours</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="cb-message" class="form-label">Brief Note (Optional)</label>
+              <textarea id="cb-message" class="form-textarea" placeholder="Tell us if you have dental sensitivity, specific concerns, or preferred dates..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold form-submit-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.19 8.19 0 0 1-5.82 2.42c-1.47 0-2.9-.39-4.16-1.13l-.3-.18-3.09.81.83-3.01-.2-.31a8.16 8.16 0 0 1-1.26-4.42c0-4.54 3.7-8.24 8.24-8.24zm4.51 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.84-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.22.89 2.41 1.02 2.58.12.17 1.76 2.68 4.26 3.76.6.26 1.06.41 1.42.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"/>
+              </svg>
+              Request Call Back via WhatsApp
+            </button>
+
+            <p class="form-privacy-note">
+              🔒 Your contact information is kept strictly confidential and used solely for appointment coordination.
+            </p>
+
+            <div id="form-success-alert" class="form-success-alert">
+              <strong>Request Received!</strong> Opening WhatsApp with your pre-filled inquiry. Our clinic team will connect with you promptly.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       12. FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Clinic Overview -->
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 16px;">
+            <div class="brand-logo-text">
+              <span class="brand-title" data-config="clinicName">Smile Demo Dental Clinic</span>
+              <span class="brand-subtitle" data-config="tagline">Compassionate dental care, crafted with precision.</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            A state-of-the-art dental clinic dedicated to gentle, predictable, and evidence-based oral healthcare for local families.
+          </p>
+          <div style="font-size: 13px; color: var(--color-champagne);">
+            Led by <strong data-config="doctorName">Dr. Demo Name</strong> (<span data-config="doctorQualification">BDS, MDS</span>)
+          </div>
+        </div>
+
+        <!-- Col 2: Treatments Directory -->
+        <div class="footer-col">
+          <h4>Clinical Services</h4>
+          <ul class="footer-links">
+            <li><a href="#treatments">Dental Implants</a></li>
+            <li><a href="#treatments">Microscopic Root Canal</a></li>
+            <li><a href="#treatments">Clear Aligners</a></li>
+            <li><a href="#treatments">Teeth Whitening</a></li>
+            <li><a href="#treatments">Smile Makeovers</a></li>
+            <li><a href="#treatments">Zirconia Crowns</a></li>
+            <li><a href="#treatments">Laser Gum Therapy</a></li>
+            <li><a href="#treatments">Pediatric Dentistry</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Navigation -->
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#signature-feature">Single-Visit Care</a></li>
+            <li><a href="#philosophy">Our 3 Pillars</a></li>
+            <li><a href="#doctor">Meet Dr. Demo</a></li>
+            <li><a href="#reviews">Patient Stories</a></li>
+            <li><a href="#before-after">Before &amp; After</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+            <li><a href="#contact">Request a Call Back</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Hours -->
+        <div class="footer-col">
+          <h4>Visit &amp; Contact</h4>
+          <div class="footer-contact-info">
+            <p>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span data-config="address">Suite 204, Platinum Health Square, Turner Road, Bandra West, Mumbai 400050</span>
+            </p>
+            <p>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span data-config="phone">+91 00000 00000</span>
+            </p>
+            <p>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span data-config="hours">Mon – Sat: 9:30 AM – 8:00 PM</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="year-placeholder">2026</span> <span data-config="clinicName">Smile Demo Dental Clinic</span>. All rights reserved.
+        </div>
+        <div style="font-size: 11.5px; opacity: 0.75;">
+          Demonstration Website Template &bull; Sample statistics &amp; reviews for sales presentation purposes.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       13. MOBILE BOTTOM STICKY ACTION BAR (390px Mobile Viewport UX)
+       ========================================================================== -->
+  <div class="mobile-sticky-bar" id="mobile-sticky-bar">
+    <div class="mobile-sticky-inner">
+      <a href="tel:+910000000000" class="mobile-sticky-btn mobile-call-btn" data-config-phone aria-label="Call clinic directly">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        Call Clinic
+      </a>
+
+      <a href="https://wa.me/910000000000" class="mobile-sticky-btn mobile-whatsapp-btn" data-config-whatsapp target="_blank" rel="noopener noreferrer" aria-label="Book appointment on WhatsApp">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.19 8.19 0 0 1-5.82 2.42c-1.47 0-2.9-.39-4.16-1.13l-.3-.18-3.09.81.83-3.01-.2-.31a8.16 8.16 0 0 1-1.26-4.42c0-4.54 3.7-8.24 8.24-8.24zm4.51 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.84-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.22.89 2.41 1.02 2.58.12.17 1.76 2.68 4.26 3.76.6.26 1.06.41 1.42.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Scripts: config.js must load before script.js -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
